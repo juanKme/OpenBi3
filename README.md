@@ -2,6 +2,8 @@
 OpenBi3 technology — BIM interface for integrated implementation of Asset Life-cycle Management.
 
 
+
+
 ## Bi3
 This is a technological interface that helps AEC professionals to close the existing gap between the BIM abstract data and the factual data captured from the real world, in order to streamline all the manipulation of project information, to reduce costs due to inefficient processes and to achieve successful buildings.
 
@@ -44,5 +46,5 @@ Modern AEC industry is so complex and specialized, that no single product could 
 These products categories offer a huge range of opportunities to companies and individuals, to create new products, devices & apps and to develop innovative businesses around a common integrated interface for BIM implementations on integrated AEC projects.
 
 
-
+# FIND OUT MORE
 To find out more about this initiative, please feel free to send your comments and contact us.

@@ -1,0 +1,138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_BIMlibrary.cpp; sourceTree = "<group>"; };
+		2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_BIMlibrary.hpp; sourceTree = "<group>"; };
+		22892292260578A700E9DCA3 /* bi3_dataComms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataComms.cpp; sourceTree = "<group>"; };
+		22892293260578A700E9DCA3 /* bi3_dataComms.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataComms.hpp; sourceTree = "<group>"; };
+		2289229526057BE000E9DCA3 /* bi3_dataCapture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataCapture.cpp; sourceTree = "<group>"; };
+		2289229626057BE000E9DCA3 /* bi3_dataCapture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataCapture.hpp; sourceTree = "<group>"; };
+		2289229726057D9F00E9DCA3 /* bi3_dataControl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataControl.cpp; sourceTree = "<group>"; };
+		2289229826057D9F00E9DCA3 /* bi3_dataControl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataControl.hpp; sourceTree = "<group>"; };
+		2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataAccess.cpp; sourceTree = "<group>"; };
+		2289229A26057E1C00E9DCA3 /* bi3_dataAccess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataAccess.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		22892284260575DB00E9DCA3 = {
+			isa = PBXGroup;
+			children = (
+				22892291260577A000E9DCA3 /* bi3_accessInterface */,
+				228922902605778100E9DCA3 /* bi3_monitorsModule */,
+				2289228F2605776A00E9DCA3 /* bi3_trackersModule */,
+				2289228E2605774A00E9DCA3 /* bi3_servicesModule */,
+				2289228B260576E600E9DCA3 /* bi3_foundationCore */,
+			);
+			sourceTree = "<group>";
+		};
+		2289228B260576E600E9DCA3 /* bi3_foundationCore */ = {
+			isa = PBXGroup;
+			children = (
+				22892294260578C100E9DCA3 /* BIM_library */,
+				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
+				2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */,
+			);
+			path = bi3_foundationCore;
+			sourceTree = "<group>";
+		};
+		2289228E2605774A00E9DCA3 /* bi3_servicesModule */ = {
+			isa = PBXGroup;
+			children = (
+				22892292260578A700E9DCA3 /* bi3_dataComms.cpp */,
+				22892293260578A700E9DCA3 /* bi3_dataComms.hpp */,
+			);
+			path = bi3_servicesModule;
+			sourceTree = "<group>";
+		};
+		2289228F2605776A00E9DCA3 /* bi3_trackersModule */ = {
+			isa = PBXGroup;
+			children = (
+				2289229526057BE000E9DCA3 /* bi3_dataCapture.cpp */,
+				2289229626057BE000E9DCA3 /* bi3_dataCapture.hpp */,
+			);
+			path = bi3_trackersModule;
+			sourceTree = "<group>";
+		};
+		228922902605778100E9DCA3 /* bi3_monitorsModule */ = {
+			isa = PBXGroup;
+			children = (
+				2289229726057D9F00E9DCA3 /* bi3_dataControl.cpp */,
+				2289229826057D9F00E9DCA3 /* bi3_dataControl.hpp */,
+			);
+			path = bi3_monitorsModule;
+			sourceTree = "<group>";
+		};
+		22892291260577A000E9DCA3 /* bi3_accessInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */,
+				2289229A26057E1C00E9DCA3 /* bi3_dataAccess.hpp */,
+			);
+			path = bi3_accessInterface;
+			sourceTree = "<group>";
+		};
+		22892294260578C100E9DCA3 /* BIM_library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BIM_library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		22892285260575DB00E9DCA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+			};
+			buildConfigurationList = 22892288260575DB00E9DCA3 /* Build configuration list for PBXProject "OpenBi3_Framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22892284260575DB00E9DCA3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		22892289260575DB00E9DCA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2289228A260575DB00E9DCA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22892288260575DB00E9DCA3 /* Build configuration list for PBXProject "OpenBi3_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22892289260575DB00E9DCA3 /* Debug */,
+				2289228A260575DB00E9DCA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22892285260575DB00E9DCA3 /* Project object */;
+}

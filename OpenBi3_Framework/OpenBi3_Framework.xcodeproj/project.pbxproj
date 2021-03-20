@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		22358DC726058A5400507A8E /* BIM_object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BIM_object.cpp; sourceTree = "<group>"; };
+		22358DC826058A5400507A8E /* BIM_object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BIM_object.hpp; sourceTree = "<group>"; };
 		2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_BIMlibrary.cpp; sourceTree = "<group>"; };
 		2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_BIMlibrary.hpp; sourceTree = "<group>"; };
 		22892292260578A700E9DCA3 /* bi3_dataComms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataComms.cpp; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 		22892294260578C100E9DCA3 /* BIM_library */ = {
 			isa = PBXGroup;
 			children = (
+				22358DC726058A5400507A8E /* BIM_object.cpp */,
+				22358DC826058A5400507A8E /* BIM_object.hpp */,
 			);
 			path = BIM_library;
 			sourceTree = "<group>";

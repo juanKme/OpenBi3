@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_BIMlibrary.hpp
+ ·File:       bi3_foundationCore.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,13 +32,4 @@
  ===============================================================================
  */
 
-#ifndef bi3_BIMlibrary_hpp
-#define bi3_BIMlibrary_hpp
-
-// External references and libraries
-
-
-// Internal references
-#include <stdio.h>
-
-#endif /* bi3_BIMlibrary_hpp */
+#include "bi3_foundationCore.hpp"

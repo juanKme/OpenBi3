@@ -35,6 +35,10 @@
 #ifndef bi3_dataComms_hpp
 #define bi3_dataComms_hpp
 
+// External references and libraries
+
+
+// Internal references
 #include <stdio.h>
 
 #endif /* bi3_dataComms_hpp */

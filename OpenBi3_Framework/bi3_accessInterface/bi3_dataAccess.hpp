@@ -35,6 +35,10 @@
 #ifndef bi3_dataAccess_hpp
 #define bi3_dataAccess_hpp
 
+// External references and libraries
+
+
+// Internal references
 #include <stdio.h>
 
 #endif /* bi3_dataAccess_hpp */

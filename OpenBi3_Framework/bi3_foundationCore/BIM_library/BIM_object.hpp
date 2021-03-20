@@ -35,6 +35,56 @@
 #ifndef BIM_object_hpp
 #define BIM_object_hpp
 
+// External references and libraries
 #include <stdio.h>
 
+// Internal references
+#include "bi3_dataSet.hpp"
+
 #endif /* BIM_object_hpp */
+
+// ===============================================================================
+//    BIM OJECTS DATA-TYPE DEFINITION
+// ===============================================================================
+
+
+class bimob {
+private
+    // Object properties
+    const (type) projectIntegratedUniqueID;
+    (type) BOversion;
+    (type) BOname;
+    (type) BOdescription;
+    (type) BOtimestamp;
+    (type) BOstatus;
+    bi3Dataset BOdata;
+    
+
+    // Object functions
+    setPIID();
+    (type) updateBO((type) newBOversion, (type) newBOname, (type) newBOdescription, (type) newBOtimestamp, (type) newBOstatus, bi3Dataset newBOdata);
+    
+public:
+    // Object properties
+    (type) BOparent
+    
+    // Object functions
+    (type) readBOpiid();
+    (type) readBOversion();
+    (type) readBOname();
+    (type) readBOdescription();
+    (type) readBOtimestamp();
+    (type) readBOstatus();
+    (type) readBOdataSize();
+    (type) readBOdataValue();
+    updateBOversion((type) newBOversion);
+    updateBOname((type) newBOname);
+    updateBOdescription((type) newBOdescription);
+    updateBOupdate((type) newBOtimestamp);
+    updateBOstatus((type) newBOstatus);
+    updateBOdata(bi3Dataset newBOdata);
+    
+    
+    
+};
+

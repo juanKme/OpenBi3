@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_BIMlibrary.hpp
+ ·File:       bi3_framework.h
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,13 +32,26 @@
  ===============================================================================
  */
 
-#ifndef bi3_BIMlibrary_hpp
-#define bi3_BIMlibrary_hpp
+#ifndef bi3_framework_h
+#define bi3_framework_h
+
+
+#endif /* bi3_framework_h */
+
+// ===============================================================================
+//    FRAMEWORK LIBRARY SETUP
+// ===============================================================================
 
 // External references and libraries
 
 
 // Internal references
-#include <stdio.h>
+#include "bi3_dataAccess.hpp"
+#include "bi3_dataControl.hpp"
+#include "bi3_dataCapture.hpp"
+#include "bi3_dataComms.hpp"
+#include "bi3_foundationCore.hpp"
 
-#endif /* bi3_BIMlibrary_hpp */
+
+#pragma once
+

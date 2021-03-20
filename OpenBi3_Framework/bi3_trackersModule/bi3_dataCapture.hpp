@@ -35,6 +35,10 @@
 #ifndef bi3_dataCapture_hpp
 #define bi3_dataCapture_hpp
 
+// External references and libraries
+
+
+// Internal references
 #include <stdio.h>
 
 #endif /* bi3_dataCapture_hpp */

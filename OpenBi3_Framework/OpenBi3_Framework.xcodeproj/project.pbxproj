@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		22358DC726058A5400507A8E /* BIM_object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BIM_object.cpp; sourceTree = "<group>"; };
-		22358DC826058A5400507A8E /* BIM_object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BIM_object.hpp; sourceTree = "<group>"; };
+		22358DC726058A5400507A8E /* BIM_objects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BIM_objects.cpp; sourceTree = "<group>"; };
+		22358DC826058A5400507A8E /* BIM_objects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BIM_objects.hpp; sourceTree = "<group>"; };
 		22358DC92605AE2200507A8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22358DCA2605AF4000507A8E /* bi3_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bi3_framework.h; sourceTree = "<group>"; };
 		22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_foundationCore.cpp; sourceTree = "<group>"; };
 		22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_foundationCore.hpp; sourceTree = "<group>"; };
-		22358DCE2605BD7300507A8E /* bi3_dataSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataSet.cpp; sourceTree = "<group>"; };
-		22358DCF2605BD7300507A8E /* bi3_dataSet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataSet.hpp; sourceTree = "<group>"; };
+		22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataSets.cpp; sourceTree = "<group>"; };
+		22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataSets.hpp; sourceTree = "<group>"; };
+		22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataTypes.cpp; sourceTree = "<group>"; };
+		22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataTypes.hpp; sourceTree = "<group>"; };
 		2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_BIMlibrary.cpp; sourceTree = "<group>"; };
 		2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_BIMlibrary.hpp; sourceTree = "<group>"; };
 		22892292260578A700E9DCA3 /* bi3_dataComms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataComms.cpp; sourceTree = "<group>"; };
@@ -31,8 +33,8 @@
 		22358DCD2605BCF900507A8E /* Data_types */ = {
 			isa = PBXGroup;
 			children = (
-				22358DCE2605BD7300507A8E /* bi3_dataSet.cpp */,
-				22358DCF2605BD7300507A8E /* bi3_dataSet.hpp */,
+				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
+				22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */,
 			);
 			path = Data_types;
 			sourceTree = "<group>";
@@ -59,6 +61,8 @@
 				2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */,
 				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
 				22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */,
+				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
+				22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */,
 			);
 			path = bi3_foundationCore;
 			sourceTree = "<group>";
@@ -102,8 +106,8 @@
 		22892294260578C100E9DCA3 /* BIM_library */ = {
 			isa = PBXGroup;
 			children = (
-				22358DC726058A5400507A8E /* BIM_object.cpp */,
-				22358DC826058A5400507A8E /* BIM_object.hpp */,
+				22358DC726058A5400507A8E /* BIM_objects.cpp */,
+				22358DC826058A5400507A8E /* BIM_objects.hpp */,
 			);
 			path = BIM_library;
 			sourceTree = "<group>";

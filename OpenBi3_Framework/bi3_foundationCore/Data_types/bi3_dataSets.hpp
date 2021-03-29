@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       BIM_object.cpp
+ ·File:       bi3_dataSets.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,4 +32,13 @@
  ===============================================================================
  */
 
-#include "BIM_object.hpp"
+#ifndef bi3_dataSets_hpp
+#define bi3_dataSets_hpp
+
+#include <stdio.h>
+
+#endif /* bi3_dataSets_hpp */
+
+struct bi3Dataset {
+    
+};

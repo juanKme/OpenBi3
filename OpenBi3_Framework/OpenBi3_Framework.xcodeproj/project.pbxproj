@@ -14,7 +14,7 @@
 		22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_foundationCore.cpp; sourceTree = "<group>"; };
 		22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_foundationCore.hpp; sourceTree = "<group>"; };
 		22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataSets.cpp; sourceTree = "<group>"; };
-		22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataSets.hpp; sourceTree = "<group>"; };
+		22358DCF2605BD7300507A8E /* bi3_dataCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataCollection.hpp; sourceTree = "<group>"; };
 		22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataTypes.cpp; sourceTree = "<group>"; };
 		22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataTypes.hpp; sourceTree = "<group>"; };
 		2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_BIMlibrary.cpp; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
-				22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */,
+				22358DCF2605BD7300507A8E /* bi3_dataCollection.hpp */,
 			);
 			path = Data_types;
 			sourceTree = "<group>";

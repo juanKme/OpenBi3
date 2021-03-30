@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataSets.cpp
+ ·File:       bi3_dataCollection.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,8 +32,8 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataSets_hpp
-#define bi3_dataSets_hpp
+#ifndef bi3_dataCollection_hpp
+#define bi3_dataCollection_hpp
 
 #include <stdio.h>
 

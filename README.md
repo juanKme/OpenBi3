@@ -31,7 +31,7 @@ The Bi3 technology is developed with flexibility and modularity in mind, since t
 
 
 
-### — Products catalog 
+### — Products compatibility 
 Modern AEC industry is so complex and specialized, that no single product could respond to the growing needs of professionals and projects. That's how Bi3 promotes the creation of several products, both hardware & software, working integrally to effectively interface and communicate the real world data and the BIM data to everyone involved in the project's development and life-span. The three types of products that Bi3 foresees being developed anytime in the future, are as follows.
 
 

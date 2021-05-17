@@ -14,7 +14,7 @@
 		22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_foundationCore.cpp; sourceTree = "<group>"; };
 		22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_foundationCore.hpp; sourceTree = "<group>"; };
 		22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataSets.cpp; sourceTree = "<group>"; };
-		22358DCF2605BD7300507A8E /* bi3_dataCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataCollection.hpp; sourceTree = "<group>"; };
+		22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataSets.hpp; sourceTree = "<group>"; };
 		22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataTypes.cpp; sourceTree = "<group>"; };
 		22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataTypes.hpp; sourceTree = "<group>"; };
 		2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_BIMlibrary.cpp; sourceTree = "<group>"; };
@@ -27,14 +27,28 @@
 		2289229826057D9F00E9DCA3 /* bi3_dataControl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataControl.hpp; sourceTree = "<group>"; };
 		2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataAccess.cpp; sourceTree = "<group>"; };
 		2289229A26057E1C00E9DCA3 /* bi3_dataAccess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataAccess.hpp; sourceTree = "<group>"; };
+		228D8CAD264C8328008EC6CD /* bi3_dataNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataNumbers.cpp; sourceTree = "<group>"; };
+		228D8CAE264C8328008EC6CD /* bi3_dataNumbers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataNumbers.hpp; sourceTree = "<group>"; };
+		228D8CAF264C85D9008EC6CD /* bi3_dataTexts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataTexts.cpp; sourceTree = "<group>"; };
+		228D8CB0264C85D9008EC6CD /* bi3_dataTexts.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataTexts.hpp; sourceTree = "<group>"; };
+		228D8CB1264C86FB008EC6CD /* bi3_dataTimes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataTimes.cpp; sourceTree = "<group>"; };
+		228D8CB2264C86FB008EC6CD /* bi3_dataTimes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataTimes.hpp; sourceTree = "<group>"; };
+		228D8CB3264C8EFC008EC6CD /* bi3_dataMaths.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataMaths.cpp; sourceTree = "<group>"; };
+		228D8CB4264C8EFC008EC6CD /* bi3_dataMaths.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataMaths.hpp; sourceTree = "<group>"; };
+		228D8CB5264CD6D9008EC6CD /* bi3_dataLogics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataLogics.cpp; sourceTree = "<group>"; };
+		228D8CB6264CD6D9008EC6CD /* bi3_dataLogics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataLogics.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		22358DCD2605BCF900507A8E /* Data_types */ = {
 			isa = PBXGroup;
 			children = (
-				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
-				22358DCF2605BD7300507A8E /* bi3_dataCollection.hpp */,
+				228D8CAE264C8328008EC6CD /* bi3_dataNumbers.hpp */,
+				228D8CB4264C8EFC008EC6CD /* bi3_dataMaths.hpp */,
+				228D8CB6264CD6D9008EC6CD /* bi3_dataLogics.hpp */,
+				228D8CB0264C85D9008EC6CD /* bi3_dataTexts.hpp */,
+				228D8CB2264C86FB008EC6CD /* bi3_dataTimes.hpp */,
+				22358DCF2605BD7300507A8E /* bi3_dataSets.hpp */,
 			);
 			path = Data_types;
 			sourceTree = "<group>";
@@ -55,13 +69,12 @@
 		2289228B260576E600E9DCA3 /* bi3_foundationCore */ = {
 			isa = PBXGroup;
 			children = (
+				228D8CAC264C820A008EC6CD /* Admin_tools */,
+				228D8CA7264C814E008EC6CD /* FC_src */,
 				22358DCD2605BCF900507A8E /* Data_types */,
 				22892294260578C100E9DCA3 /* BIM_library */,
-				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
 				2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */,
-				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
 				22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */,
-				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
 				22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */,
 			);
 			path = bi3_foundationCore;
@@ -70,7 +83,7 @@
 		2289228E2605774A00E9DCA3 /* bi3_servicesModule */ = {
 			isa = PBXGroup;
 			children = (
-				22892292260578A700E9DCA3 /* bi3_dataComms.cpp */,
+				228D8CAB264C81C9008EC6CD /* SM_src */,
 				22892293260578A700E9DCA3 /* bi3_dataComms.hpp */,
 			);
 			path = bi3_servicesModule;
@@ -79,7 +92,7 @@
 		2289228F2605776A00E9DCA3 /* bi3_trackersModule */ = {
 			isa = PBXGroup;
 			children = (
-				2289229526057BE000E9DCA3 /* bi3_dataCapture.cpp */,
+				228D8CAA264C81B8008EC6CD /* TM_src */,
 				2289229626057BE000E9DCA3 /* bi3_dataCapture.hpp */,
 			);
 			path = bi3_trackersModule;
@@ -88,7 +101,7 @@
 		228922902605778100E9DCA3 /* bi3_monitorsModule */ = {
 			isa = PBXGroup;
 			children = (
-				2289229726057D9F00E9DCA3 /* bi3_dataControl.cpp */,
+				228D8CA9264C81A6008EC6CD /* MM_src */,
 				2289229826057D9F00E9DCA3 /* bi3_dataControl.hpp */,
 			);
 			path = bi3_monitorsModule;
@@ -97,7 +110,7 @@
 		22892291260577A000E9DCA3 /* bi3_accessInterface */ = {
 			isa = PBXGroup;
 			children = (
-				2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */,
+				228D8CA8264C818D008EC6CD /* AI_src */,
 				2289229A26057E1C00E9DCA3 /* bi3_dataAccess.hpp */,
 			);
 			path = bi3_accessInterface;
@@ -106,10 +119,65 @@
 		22892294260578C100E9DCA3 /* BIM_library */ = {
 			isa = PBXGroup;
 			children = (
-				22358DC726058A5400507A8E /* BIM_objects.cpp */,
 				22358DC826058A5400507A8E /* BIM_objects.hpp */,
 			);
 			path = BIM_library;
+			sourceTree = "<group>";
+		};
+		228D8CA7264C814E008EC6CD /* FC_src */ = {
+			isa = PBXGroup;
+			children = (
+				228D8CAD264C8328008EC6CD /* bi3_dataNumbers.cpp */,
+				228D8CB3264C8EFC008EC6CD /* bi3_dataMaths.cpp */,
+				228D8CB5264CD6D9008EC6CD /* bi3_dataLogics.cpp */,
+				228D8CAF264C85D9008EC6CD /* bi3_dataTexts.cpp */,
+				228D8CB1264C86FB008EC6CD /* bi3_dataTimes.cpp */,
+				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
+				22358DC726058A5400507A8E /* BIM_objects.cpp */,
+				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
+				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
+				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
+			);
+			path = FC_src;
+			sourceTree = "<group>";
+		};
+		228D8CA8264C818D008EC6CD /* AI_src */ = {
+			isa = PBXGroup;
+			children = (
+				2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */,
+			);
+			path = AI_src;
+			sourceTree = "<group>";
+		};
+		228D8CA9264C81A6008EC6CD /* MM_src */ = {
+			isa = PBXGroup;
+			children = (
+				2289229726057D9F00E9DCA3 /* bi3_dataControl.cpp */,
+			);
+			path = MM_src;
+			sourceTree = "<group>";
+		};
+		228D8CAA264C81B8008EC6CD /* TM_src */ = {
+			isa = PBXGroup;
+			children = (
+				2289229526057BE000E9DCA3 /* bi3_dataCapture.cpp */,
+			);
+			path = TM_src;
+			sourceTree = "<group>";
+		};
+		228D8CAB264C81C9008EC6CD /* SM_src */ = {
+			isa = PBXGroup;
+			children = (
+				22892292260578A700E9DCA3 /* bi3_dataComms.cpp */,
+			);
+			path = SM_src;
+			sourceTree = "<group>";
+		};
+		228D8CAC264C820A008EC6CD /* Admin_tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin_tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

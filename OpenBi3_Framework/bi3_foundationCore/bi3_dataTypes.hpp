@@ -36,5 +36,13 @@
 #define bi3_dataTypes_hpp
 
 #include <stdio.h>
+#include "bi3_dataNumbers.hpp"
+#include "bi3_dataMaths.hpp"
+#include "bi3_dataLogics.hpp"
+#include "bi3_dataTexts.hpp"
+#include "bi3_dataTimes.hpp"
+#include "bi3_dataSets.hpp"
+
 
 #endif /* bi3_dataTypes_hpp */
+

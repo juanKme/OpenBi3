@@ -41,3 +41,4 @@
 #include "bi3_BIMlibrary.hpp"
 
 #endif /* bi3_foundationCore_hpp */
+

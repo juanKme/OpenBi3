@@ -40,5 +40,253 @@
 
 // Internal references
 #include <stdio.h>
+#include "BIM_objects.hpp"
 
 #endif /* bi3_BIMlibrary_hpp */
+
+//  ==============================================================================
+//      LEVEL 1 — DATA-TYPE DEFINITIONS FOR BIM ASSET CLASSES
+//  ==============================================================================
+
+//  _____ C1 — BASIC BIM DATA TYPE FOR ASSETS OR PROJECT OBJECTS. ________________
+//  ______________________________________________________________________________
+class bimProject : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    std::array<bimMember,1> BPmembers;
+    
+    // Object functions
+    
+    
+};
+
+//  _____ C1.1 — SPECIALIZED BIM DATA TYPE FOR BUILDING-PROJECT OBJECTS. _________
+//  ______________________________________________________________________________
+class bimBuildingPrj : public bimProject {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+//  _____ C1.2 — SPECIALIZED BIM DATA TYPE FOR ROADWAYS-PROJECT OBJECTS. _________
+//  ______________________________________________________________________________
+class bimRoadwayPrj : public bimProject {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+//  ==============================================================================
+//      LEVEL 2 — DATA-TYPE DEFINITIONS FOR BIM ASSET'S COMPONENTS CLASSES
+//  ==============================================================================
+
+//  _____ C2 — BASIC BIM DATA TYPE FOR PROJECT'S COMPONENT OBJECTS. ______________
+//  ______________________________________________________________________________
+class bimMember : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+//  _____ C2.2 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
+//  ______________________________________________________________________________
+class bimBuildingPrj : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+//  _____ C2.2 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
+//  ______________________________________________________________________________
+class bimRoadwayPrj : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+//  ==============================================================================
+//      LEVEL 0 — FUNDAMENTAL BIM OBJECTS DATA-TYPE DEFINITIONS
+//  ==============================================================================
+
+//  _____ C2.2 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
+//  ______________________________________________________________________________
+class bimFeature : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+// ===============================================================================
+//    LEVEL 1 BIM OJECTS DATA-TYPE DEFINITIONS
+// ===============================================================================
+
+//  _____ C1.2 — DATA-TYPE DEFINITION FOR ROADWAYS PROJECTS CLASSES ______________
+//  ______________________________________________________________________________
+class bim_set : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+// ===============================================================================
+//    LEVEL 1 BIM OJECTS DATA-TYPE DEFINITIONS
+// ===============================================================================
+
+//  _____ C1.2 — DATA-TYPE DEFINITION FOR ROADWAYS PROJECTS CLASSES ______________
+//  ______________________________________________________________________________
+class bimProperty : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+// ===============================================================================
+//    LEVEL 1 — BIM OJECTS DATA-TYPE DEFINITIONS
+// ===============================================================================
+
+//  _____ C1.2 — DATA-TYPE DEFINITION FOR ROADWAYS PROJECTS CLASSES ______________
+//  ______________________________________________________________________________
+class bimObject : public bimData {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
+
+
+
+// ===============================================================================
+//    LEVEL 1 BIM OJECTS DATA-TYPE DEFINITIONS
+// ===============================================================================
+
+//  _____ C1.2 — DATA-TYPE DEFINITION FOR ROADWAYS PROJECTS CLASSES ______________
+//  ______________________________________________________________________________
+class bimdata {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+

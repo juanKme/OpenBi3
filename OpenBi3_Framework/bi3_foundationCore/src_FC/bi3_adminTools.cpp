@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataSets.cpp
+ ·File:       bi3_adminTools.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,49 +32,5 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataSets_hpp
-#define bi3_dataSets_hpp
 
-#pragma once
-
-// Internal references
-
-
-// External references and libraries
-#include <stdio.h>
-#include <array.h>
-
-#endif /* bi3_dataSets_hpp */
-
-
-//  ==============================================================================
-//      DATA TYPE DEFINITIONS FOR INFORMATION AGGREGATION & DATA COLLECTIONS
-//  ==============================================================================
-
-//  _____ BASIC COLLECTION DATA TYPES. ___________________________________________
-//  ______________________________________________________________________________
-
-//  Fundamental data-type for collections of data and BIM objects.
-struct bi3DataSet {
-    std::array<bi3TEN,1> dataIDTree;
-};
-
-//  A static collection of objects with a specific and unmutable order.
-struct bi3Array : public bi3DataSet {
-    <#struct fields#>
-};
-
-//  A dynamic collection of objects with a specific and unmutable order.
-struct bi3List : public bi3DataSet{
-    <#struct fields#>
-};
-
-//  A dynamic collection of objects with no particular order.
-struct bi3Bag : public bi3DataSet{
-    <#struct fields#>
-};
-
-//  A dynamic collection of objects with no particular order and no duplication allowed.
-struct bi3Set : public bi3DataSet{
-    <#struct fields#>
-};
+#include "bi3_adminTools.hpp"

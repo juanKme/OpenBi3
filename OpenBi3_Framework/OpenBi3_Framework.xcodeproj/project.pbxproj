@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		2226E69926526F0500F81E32 /* bi3_adminTools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_adminTools.cpp; sourceTree = "<group>"; };
+		2226E69A26526F0500F81E32 /* bi3_adminTools.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_adminTools.hpp; sourceTree = "<group>"; };
 		22358DC726058A5400507A8E /* BIM_objects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BIM_objects.cpp; sourceTree = "<group>"; };
 		22358DC826058A5400507A8E /* BIM_objects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BIM_objects.hpp; sourceTree = "<group>"; };
 		22358DC92605AE2200507A8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		22358DCD2605BCF900507A8E /* Data_types */ = {
 			isa = PBXGroup;
 			children = (
+				22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */,
 				228D8CAE264C8328008EC6CD /* bi3_dataNumbers.hpp */,
 				228D8CB4264C8EFC008EC6CD /* bi3_dataMaths.hpp */,
 				228D8CB6264CD6D9008EC6CD /* bi3_dataLogics.hpp */,
@@ -69,13 +72,11 @@
 		2289228B260576E600E9DCA3 /* bi3_foundationCore */ = {
 			isa = PBXGroup;
 			children = (
+				228D8CA7264C814E008EC6CD /* src_FC */,
 				228D8CAC264C820A008EC6CD /* Admin_tools */,
-				228D8CA7264C814E008EC6CD /* FC_src */,
 				22358DCD2605BCF900507A8E /* Data_types */,
 				22892294260578C100E9DCA3 /* BIM_library */,
-				2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */,
 				22358DCC2605B26C00507A8E /* bi3_foundationCore.hpp */,
-				22358DD12605DAFF00507A8E /* bi3_dataTypes.hpp */,
 			);
 			path = bi3_foundationCore;
 			sourceTree = "<group>";
@@ -83,7 +84,7 @@
 		2289228E2605774A00E9DCA3 /* bi3_servicesModule */ = {
 			isa = PBXGroup;
 			children = (
-				228D8CAB264C81C9008EC6CD /* SM_src */,
+				228D8CAB264C81C9008EC6CD /* src_SM */,
 				22892293260578A700E9DCA3 /* bi3_dataComms.hpp */,
 			);
 			path = bi3_servicesModule;
@@ -92,7 +93,7 @@
 		2289228F2605776A00E9DCA3 /* bi3_trackersModule */ = {
 			isa = PBXGroup;
 			children = (
-				228D8CAA264C81B8008EC6CD /* TM_src */,
+				228D8CAA264C81B8008EC6CD /* src_TM */,
 				2289229626057BE000E9DCA3 /* bi3_dataCapture.hpp */,
 			);
 			path = bi3_trackersModule;
@@ -101,7 +102,7 @@
 		228922902605778100E9DCA3 /* bi3_monitorsModule */ = {
 			isa = PBXGroup;
 			children = (
-				228D8CA9264C81A6008EC6CD /* MM_src */,
+				228D8CA9264C81A6008EC6CD /* src_MM */,
 				2289229826057D9F00E9DCA3 /* bi3_dataControl.hpp */,
 			);
 			path = bi3_monitorsModule;
@@ -110,7 +111,7 @@
 		22892291260577A000E9DCA3 /* bi3_accessInterface */ = {
 			isa = PBXGroup;
 			children = (
-				228D8CA8264C818D008EC6CD /* AI_src */,
+				228D8CA8264C818D008EC6CD /* src_AI */,
 				2289229A26057E1C00E9DCA3 /* bi3_dataAccess.hpp */,
 			);
 			path = bi3_accessInterface;
@@ -119,14 +120,17 @@
 		22892294260578C100E9DCA3 /* BIM_library */ = {
 			isa = PBXGroup;
 			children = (
+				2289228D2605773F00E9DCA3 /* bi3_BIMlibrary.hpp */,
 				22358DC826058A5400507A8E /* BIM_objects.hpp */,
 			);
 			path = BIM_library;
 			sourceTree = "<group>";
 		};
-		228D8CA7264C814E008EC6CD /* FC_src */ = {
+		228D8CA7264C814E008EC6CD /* src_FC */ = {
 			isa = PBXGroup;
 			children = (
+				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
+				2226E69926526F0500F81E32 /* bi3_adminTools.cpp */,
 				228D8CAD264C8328008EC6CD /* bi3_dataNumbers.cpp */,
 				228D8CB3264C8EFC008EC6CD /* bi3_dataMaths.cpp */,
 				228D8CB5264CD6D9008EC6CD /* bi3_dataLogics.cpp */,
@@ -134,48 +138,48 @@
 				228D8CB1264C86FB008EC6CD /* bi3_dataTimes.cpp */,
 				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
 				22358DC726058A5400507A8E /* BIM_objects.cpp */,
-				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
-				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
 				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
+				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
 			);
-			path = FC_src;
+			path = src_FC;
 			sourceTree = "<group>";
 		};
-		228D8CA8264C818D008EC6CD /* AI_src */ = {
+		228D8CA8264C818D008EC6CD /* src_AI */ = {
 			isa = PBXGroup;
 			children = (
 				2289229926057E1C00E9DCA3 /* bi3_dataAccess.cpp */,
 			);
-			path = AI_src;
+			path = src_AI;
 			sourceTree = "<group>";
 		};
-		228D8CA9264C81A6008EC6CD /* MM_src */ = {
+		228D8CA9264C81A6008EC6CD /* src_MM */ = {
 			isa = PBXGroup;
 			children = (
 				2289229726057D9F00E9DCA3 /* bi3_dataControl.cpp */,
 			);
-			path = MM_src;
+			path = src_MM;
 			sourceTree = "<group>";
 		};
-		228D8CAA264C81B8008EC6CD /* TM_src */ = {
+		228D8CAA264C81B8008EC6CD /* src_TM */ = {
 			isa = PBXGroup;
 			children = (
 				2289229526057BE000E9DCA3 /* bi3_dataCapture.cpp */,
 			);
-			path = TM_src;
+			path = src_TM;
 			sourceTree = "<group>";
 		};
-		228D8CAB264C81C9008EC6CD /* SM_src */ = {
+		228D8CAB264C81C9008EC6CD /* src_SM */ = {
 			isa = PBXGroup;
 			children = (
 				22892292260578A700E9DCA3 /* bi3_dataComms.cpp */,
 			);
-			path = SM_src;
+			path = src_SM;
 			sourceTree = "<group>";
 		};
 		228D8CAC264C820A008EC6CD /* Admin_tools */ = {
 			isa = PBXGroup;
 			children = (
+				2226E69A26526F0500F81E32 /* bi3_adminTools.hpp */,
 			);
 			path = Admin_tools;
 			sourceTree = "<group>";

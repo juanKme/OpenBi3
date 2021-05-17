@@ -35,6 +35,12 @@
 #ifndef bi3_dataTexts_hpp
 #define bi3_dataTexts_hpp
 
+#pragma once
+
+// Internal references
+
+
+// External references and libraries
 #include <stdio.h>
 
 #endif /* bi3_dataTexts_hpp */

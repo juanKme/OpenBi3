@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataNumbers.hpp
+ ·File:       bi3_dataNumbers.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 12/05/21
@@ -32,22 +32,11 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataNumbers_hpp
-#define bi3_dataNumbers_hpp
 
-#pragma once
-
-// Internal references
-
-
-// External references and libraries
-#include <stdio.h>
-
-#endif /* bi3_dataNumbers_hpp */
-
+#include "bi3_dataNumbers.hpp"
 
 //  ==============================================================================
-//      DATA TYPE DEFINITIONS FOR NUMERIC VARIABLES OR DATA
+//      DATA TYPE IMPLEMENTATIONS FOR NUMERIC VARIABLES OR DATA
 //  ==============================================================================
 
 //  _____ NATURAL NUMBERS ( 0 ≥ VAR ≥ +N) ________________________________________

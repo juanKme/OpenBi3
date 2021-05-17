@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       BIM_objects.hpp
+ ·File:       bi3_dataTypes.hpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,63 +32,23 @@
  ===============================================================================
  */
 
-#ifndef BIM_objects_hpp
-#define BIM_objects_hpp
+#ifndef bi3_dataTypes_hpp
+#define bi3_dataTypes_hpp
 
 #pragma once
 
 // Internal references
-#include <../Data_types/bi3_dataTypes.hpp>
+
 
 // External references and libraries
+#include <stdio.h>
+#include "/Data_types/bi3_dataNumbers.hpp"
+#include "bi3_dataMaths.hpp"
+#include "bi3_dataLogics.hpp"
+#include "bi3_dataTexts.hpp"
+#include "bi3_dataTimes.hpp"
+#include "bi3_dataSets.hpp"
 
 
+#endif /* bi3_dataTypes_hpp */
 
-//  ==============================================================================
-//      LEVEL 0 — DATA TYPE DEFINITIONS FOR FUNDAMENTAL BIM OBJECTS CLASSES
-//  ==============================================================================
-
-//  _____ C0 — CORE DATA TYPE FOR CROSS-FRAMEWORK BIM CLASSES. ___________________
-//  ______________________________________________________________________________
-class bimData {
-private:
-    // Object private properties
-    bi3TextM        BOname;
-    bi3TextXL       BOdescription;
-    bi3TextS        BOstatus;
-    bi3N8           BOversion;
-    bi3TimeF        BOtimestamp;
-    
-    // Object private functions
-    void setBOuniqueID(bimData parentObject);
-    void updateBO(bi3TextM  newBOname,
-                  bi3TextXL newBOdescription,
-                  bi3TextS  newBOstatus,
-                  bi3N8     newBOversion,
-                  bi3TimeF  newBOtimestamp,
-                  bimdata   newBOdata);
-    
-public:
-    // Object public properties
-    const std::array<bi3TEN,10> dataIDTree;
-    const bi3TEN    BOparent;
-    const bi3TEN    BOuniqueID;
-    
-    // Object public functions
-    bi3TextM    readBOname();
-    bi3TextXL   readBOdescription();
-    bi3TextS    readBOstatus();
-    bi3N8       readBOversion();
-    bi3TimeF    readBOtimestamp();
-    bi3DataSet  readBOdataSize();
-    bimdata     readBOdataValue();
-    void updateBO(bi3TextM newBOname);
-    void updateBO(bi3TextXL newBOdescription);
-    void updateBO(bi3TextS newBOstatus);
-    void updateBO(bi3N8 newBOversion);
-    void updateBO(bi3TimeF newBOtimestamp);
-    void updateBO(bi3Dataset newBOdata);
-    
-};
-
-#endif /* BIM_object_hpp */

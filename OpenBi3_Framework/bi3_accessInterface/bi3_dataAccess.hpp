@@ -35,13 +35,14 @@
 #ifndef bi3_dataAccess_hpp
 #define bi3_dataAccess_hpp
 
-// External references and libraries
-
+#pragma once
 
 // Internal references
+
+
+// External references and libraries
 #include <stdio.h>
 
-#endif /* bi3_dataAccess_hpp */
 
 
 //  ==============================================================================
@@ -50,3 +51,6 @@
 
 //  _____ C0 — CORE DATA TYPE FOR CROSS-FRAMEWORK BIM CLASSES. ___________________
 //  ______________________________________________________________________________
+
+
+#endif /* bi3_dataAccess_hpp */

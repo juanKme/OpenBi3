@@ -35,10 +35,12 @@
 #ifndef bi3_BIMlibrary_hpp
 #define bi3_BIMlibrary_hpp
 
-// External references and libraries
-
+#pragma once
 
 // Internal references
+
+
+// External references and libraries
 #include <stdio.h>
 #include "BIM_objects.hpp"
 
@@ -50,7 +52,7 @@
 
 //  _____ C1 — BASIC BIM DATA TYPE FOR ASSETS OR PROJECT OBJECTS. ________________
 //  ______________________________________________________________________________
-class bimProject : public bimData {
+class bimProject: public bimData {
 private:
     // Object properties
     

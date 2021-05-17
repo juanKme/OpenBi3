@@ -35,6 +35,12 @@
 #ifndef bi3_dataMaths_hpp
 #define bi3_dataMaths_hpp
 
+#pragma once
+
+// Internal references
+
+
+// External references and libraries
 #include <stdio.h>
 #include <bi3_dataNumbers.hpp>
 

@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataTypes.hpp
+ ·File:       bi3_adminTools.hpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,17 +32,16 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataTypes_hpp
-#define bi3_dataTypes_hpp
 
+#ifndef bi3_adminTools_hpp
+#define bi3_adminTools_hpp
+
+#pragma once
+
+// Internal references
+
+
+// External references and libraries
 #include <stdio.h>
-#include "bi3_dataNumbers.hpp"
-#include "bi3_dataMaths.hpp"
-#include "bi3_dataLogics.hpp"
-#include "bi3_dataTexts.hpp"
-#include "bi3_dataTimes.hpp"
-#include "bi3_dataSets.hpp"
 
-
-#endif /* bi3_dataTypes_hpp */
-
+#endif /* bi3_adminTools_hpp */

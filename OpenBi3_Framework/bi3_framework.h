@@ -32,18 +32,12 @@
  ===============================================================================
  */
 
-#ifndef bi3_framework_h
-#define bi3_framework_h
+#ifndef bi3_framework
+#define bi3_framework
 
+#pragma once
 
-#endif /* bi3_framework_h */
-
-// ===============================================================================
-//    FRAMEWORK LIBRARY SETUP
-// ===============================================================================
-
-// External references and libraries
-
+namespace Bi3 {
 
 // Internal references
 #include "bi3_dataAccess.hpp"
@@ -52,8 +46,11 @@
 #include "bi3_dataComms.hpp"
 #include "bi3_foundationCore.hpp"
 
+// External references and libraries
+    
+    
 
-#pragma once
+
 
 
 //  ==============================================================================
@@ -64,3 +61,10 @@
 //  ______________________________________________________________________________
 
 //  General comments.
+    
+
+// Global variables definitions
+
+}
+
+#endif /* bi3_framework */

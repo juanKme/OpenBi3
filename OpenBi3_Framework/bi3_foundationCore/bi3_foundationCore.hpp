@@ -35,6 +35,12 @@
 #ifndef bi3_foundationCore_hpp
 #define bi3_foundationCore_hpp
 
+#pragma once
+
+// Internal references
+
+
+// External references and libraries
 #include <stdio.h>
 
 

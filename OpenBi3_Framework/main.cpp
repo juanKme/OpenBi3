@@ -32,8 +32,13 @@
  ===============================================================================
  */
 
-#include <stdio.h>
-#include "bi3_framework.h"
+// Internal references
+#include <bi3_framework.h>
+
+// External references and libraries
+#include <stdio>
+#include <iostream>
+#include <fstream>
 
 
 // Demo code here...
@@ -95,4 +100,12 @@ int main(int argc, const char * argv[])
         cycle += 1;
     } while ((control != 'e'));
     return 0;
+}
+
+try {
+    // Block of code to try
+    throw exception; // Throw an exception when a problem arise
+}
+catch (...) {
+    // Block of code to handle errors
 }

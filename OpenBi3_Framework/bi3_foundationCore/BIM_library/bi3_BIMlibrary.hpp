@@ -32,25 +32,24 @@
  ===============================================================================
  */
 
-#ifndef bi3_BIMlibrary_hpp
-#define bi3_BIMlibrary_hpp
+#ifndef bi3_BIMlibrary_header
+#define bi3_BIMlibrary_header
 
 #pragma once
 
 // Internal references
-
+#include "BIM_objects.hpp"
 
 // External references and libraries
 #include <stdio.h>
-#include "BIM_objects.hpp"
 
-#endif /* bi3_BIMlibrary_hpp */
+
 
 //  ==============================================================================
-//      LEVEL 1 — DATA-TYPE DEFINITIONS FOR BIM ASSET CLASSES
+//      BIM LEVEL 1 — DATA-TYPE DEFINITIONS FOR BIM ASSETS CLASSES
 //  ==============================================================================
 
-//  _____ C1 — BASIC BIM DATA TYPE FOR ASSETS OR PROJECT OBJECTS. ________________
+//  _____ C1 — BASIC BIM CLASS FOR ASSETS OR PROJECTS OBJECTS. ___________________
 //  ______________________________________________________________________________
 class bimProject: public bimData {
 private:
@@ -62,16 +61,16 @@ private:
     
 public:
     // Object properties
-    std::array<bimMember,1> BPmembers;
+    
     
     // Object functions
     
     
 };
 
-//  _____ C1.1 — SPECIALIZED BIM DATA TYPE FOR BUILDING-PROJECT OBJECTS. _________
+//  _____ C1.1 — SPECIALIZED BIM CLASS FOR BUILDING-PROJECT OBJECTS. _____________
 //  ______________________________________________________________________________
-class bimBuildingPrj : public bimProject {
+class bimBuildingPrj: public bimProject {
 private:
     // Object properties
     
@@ -88,7 +87,7 @@ public:
     
 };
 
-//  _____ C1.2 — SPECIALIZED BIM DATA TYPE FOR ROADWAYS-PROJECT OBJECTS. _________
+//  _____ C1.2 — SPECIALIZED BIM CLASS FOR ROADWAY-PROJECT OBJECTS. ______________
 //  ______________________________________________________________________________
 class bimRoadwayPrj : public bimProject {
 private:
@@ -107,9 +106,28 @@ public:
     
 };
 
+//  _____ C1.3 — SPECIALIZED BIM CLASS FOR BRIDGE-PROJECT OBJECTS. _______________
+//  ______________________________________________________________________________
+class bimBridgePrj : public bimProject {
+private:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+public:
+    // Object properties
+    
+    
+    // Object functions
+    
+    
+};
+
 
 //  ==============================================================================
-//      LEVEL 2 — DATA-TYPE DEFINITIONS FOR BIM ASSET'S COMPONENTS CLASSES
+//      BIM LEVEL 2 — DATA-TYPE DEFINITIONS FOR BIM ASSET'S COMPONENTS CLASSES
 //  ==============================================================================
 
 //  _____ C2 — BASIC BIM DATA TYPE FOR PROJECT'S COMPONENT OBJECTS. ______________
@@ -132,9 +150,9 @@ public:
 };
 
 
-//  _____ C2.2 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
+//  _____ C2.1 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
 //  ______________________________________________________________________________
-class bimBuildingPrj : public bimData {
+class bimXMbr : public bimMember {
 private:
     // Object properties
     
@@ -292,3 +310,4 @@ public:
     
 };
 
+#endif /* bi3_BIMlibrary_hpp */

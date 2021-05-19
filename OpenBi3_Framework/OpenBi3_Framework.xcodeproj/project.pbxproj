@@ -190,6 +190,7 @@
 		22892285260575DB00E9DCA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 			};
 			buildConfigurationList = 22892288260575DB00E9DCA3 /* Build configuration list for PBXProject "OpenBi3_Framework" */;
@@ -198,8 +199,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 22892284260575DB00E9DCA3;
+			productRefGroup = 22892284260575DB00E9DCA3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

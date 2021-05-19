@@ -32,20 +32,20 @@
  ===============================================================================
  */
 
-#ifndef BIM_objects_hpp
-#define BIM_objects_hpp
+#ifndef BIM_objects_header
+#define BIM_objects_header
 
 #pragma once
 
 // Internal references
-#include <../Data_types/bi3_dataTypes.hpp>
+#include "../Data_types/bi3_dataTypes.hpp"
 
 // External references and libraries
 
 
 
 //  ==============================================================================
-//      LEVEL 0 — DATA TYPE DEFINITIONS FOR FUNDAMENTAL BIM OBJECTS CLASSES
+//      BIM LEVEL 0 — DATA TYPE DEFINITIONS FOR FUNDAMENTAL BIM CLASSES
 //  ==============================================================================
 
 //  _____ C0 — CORE DATA TYPE FOR CROSS-FRAMEWORK BIM CLASSES. ___________________
@@ -70,18 +70,17 @@ private:
     
 public:
     // Object public properties
-    const std::array<bi3TEN,10> dataIDTree;
-    const bi3TEN    BOparent;
     const bi3TEN    BOuniqueID;
+    std::array<bi3TEN> contenido;
     
     // Object public functions
-    bi3TextM    readBOname();
-    bi3TextXL   readBOdescription();
-    bi3TextS    readBOstatus();
-    bi3N8       readBOversion();
-    bi3TimeF    readBOtimestamp();
-    bi3DataSet  readBOdataSize();
-    bimdata     readBOdataValue();
+    bi3TextM        readBOname();
+    bi3TextXL       readBOdescription();
+    bi3TextS        readBOstatus();
+    bi3N8           readBOversion();
+    bi3TimeF        readBOtimestamp();
+    bi3DataSet      readBOdataSize();
+    bimdata         readBOdataValue();
     void updateBO(bi3TextM newBOname);
     void updateBO(bi3TextXL newBOdescription);
     void updateBO(bi3TextS newBOstatus);

@@ -66,12 +66,12 @@ private:
                   bi3TextS  newBOstatus,
                   bi3N8     newBOversion,
                   bi3TimeF  newBOtimestamp,
-                  bimdata   newBOdata);
+                  bimData   newBOdata);
     
 public:
     // Object public properties
     const bi3TEN    BOuniqueID;
-    std::array<bi3TEN> contenido;
+    //std::array<bi3TEN> contenido;
     
     // Object public functions
     bi3TextM        readBOname();
@@ -80,13 +80,13 @@ public:
     bi3N8           readBOversion();
     bi3TimeF        readBOtimestamp();
     bi3DataSet      readBOdataSize();
-    bimdata         readBOdataValue();
+    bimData         readBOdataValue();
     void updateBO(bi3TextM newBOname);
     void updateBO(bi3TextXL newBOdescription);
     void updateBO(bi3TextS newBOstatus);
     void updateBO(bi3N8 newBOversion);
     void updateBO(bi3TimeF newBOtimestamp);
-    void updateBO(bi3Dataset newBOdata);
+    void updateBO(bi3DataSet newBOdata);
     
 };
 

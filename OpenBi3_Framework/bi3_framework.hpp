@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_framework.h
+ ·File:       bi3_framework.hpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -36,35 +36,44 @@
 #define bi3_framework
 
 #pragma once
+#pragma GCC visibility push(default)
 
 namespace Bi3 {
-
-// Internal references
+    
+    // Internal references
 #include "bi3_dataAccess.hpp"
 #include "bi3_dataControl.hpp"
 #include "bi3_dataCapture.hpp"
 #include "bi3_dataComms.hpp"
 #include "bi3_foundationCore.hpp"
-
-// External references and libraries
+    
+    // External references and libraries
     
     
-
-
-
-
-//  ==============================================================================
-//      TITLE
-//  ==============================================================================
-
-//  _____ HEADING. _______________________________________________________________
-//  ______________________________________________________________________________
-
-//  General comments.
     
-
-// Global variables definitions
-
+    
+    
+    
+    //  ==============================================================================
+    //      TITLE
+    //  ==============================================================================
+    
+    //  _____ HEADING. _______________________________________________________________
+    //  ______________________________________________________________________________
+    
+    //  General comments.
+    
+    
+    // Global variables definitions
+    
+    
+    // The classes below are exported
+    class bi3_Framework
+    {
+    public:
+        void HelloWorld(const char *);
+    };
 }
 
+#pragma GCC visibility pop
 #endif /* bi3_framework */

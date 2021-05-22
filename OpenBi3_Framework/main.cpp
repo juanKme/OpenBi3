@@ -32,14 +32,43 @@
  ===============================================================================
  */
 
-// Internal references
-#include "bi3_framework.h"
-
 // External references and libraries
-#include <stdio>
+#include <algorithm>
+//#include <assert.h>
+//#include <chrono>
+//#include <complex.h>
+//#include <ctype.h>
+//#include <errno.h>
+//#include <fenv.h>
+//#include <float.h>
 #include <iostream>
-#include <fstream>
+//#include <inttypes.h>
+//#include <iso646.h>
+//#include <limits.h>
+//#include <locale.h>
+//#include <math.h>
+//#include <setjmp.h>
+//#include <signal.h>
+//#include <stdalign.h>
+//#include <stdarg.h>
+//#include <stdatomic.h>
+//#include <stdbool.h>
+//#include <stddef.h>
+#include <stdexcept>
+//#include <stdint.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <stdnoreturn.h>
+#include <string>
+//#include <tgmath.h>
+//#include <thread>
+//#include <time.h>
+//#include <uchar.h>
+//#include <wchar.h>
+//#include <wctype.h>
 
+// Internal references
+#include "bi3_framework.hpp"
 
 template<typename inputType>
 void log(inputType message)
@@ -55,44 +84,83 @@ void list(inputType message)
 
 int main(int argc, const char * argv[])
 {
-    unsigned object1 = _TER1(_0t2);
+    // A. iniciar sesión de trabajo preparando el entorno Bi3
+    
+    unsigned int cycle = 1;
+    char control = '0';
 
+    const std::string salute = "Mensaje de bienvenida";
+    // Main BIM-data manipulation proccess routine
     try {
-        // A. iniciar sesión de trabajo preparando el entorno Bi3
         
-        // B. hacer continuamente un switch hasta que el usuario elija salir (X)
         
-        // 1. crear un nuevo modelo desde objeto vacio tipo "BIM_model"
-        
-        // 2. cargar un modelo BIM desde contenido en archivo (si existe)
-        
-        // 3. cambiar de modelo activo en la sesión de trabajo
-        
-        // 4. editar/modificar el modelo BIM activo en la sesión de trabajo (múltiples submenus)
-        
-        // 5. guardar en archivo los cambios sobre el modelo activo en la sesión de trabajo
-        
-        // 6. terminar la sesión de trabajo
-        
-        // C. correr las rutinas y funciones que presentan la información BIM procesada
-        
-        // D. liberar recursos empleados por el entorno Bi3 con el cierre de la sesión
         
         do {
-            // Printing process
+            // B. hacer continuamente un switch hasta que el usuario elija salir (X)
+            /*switch (<#expression#>) {
+                case <#constant#>:
+                    // 1. crear un nuevo modelo desde objeto vacio tipo "BIM_model"
+                    <#statements#>
+                    break;
+                
+                case <#constant#>:
+                    // 2. cargar un modelo BIM desde contenido en archivo (si existe)
+                    <#statements#>
+                    break;
+                
+                case <#constant#>:
+                    // 3. intercambiar de modelo activo en la sesión de trabajo
+                    <#statements#>
+                    break;
+                    
+                case <#constant#>:
+                    // 4. editar el modelo BIM activo en la sesión de trabajo (múltiples submenus)
+                    <#statements#>
+                    break;
+                    
+                case <#constant#>:
+                    // 5. guardar en archivo el estado del modelo activo en la sesión de trabajo
+                    <#statements#>
+                    break;
+                    
+                case <#constant#>:
+                    // 6. terminar la sesión de trabajo
+                    <#statements#>
+                    break;
+                    
+                default:
+                    // — por defecto el programa permite ajustar la configuración del programa
+                    break;
+            }*/
+            
+            // C. correr las rutinas y funciones que presentan la información BIM procesada
             //list("Process step #");log(cycle);
             log("\n··· Objects created ···························\n");
-            list(object1);
+            //list(object1);
             log("");
             
             control = std::cin.get();log("");
             cycle += 1;
         } while ((control != 'e'));
-        return 0;
-    }
+        //throw exception; // Throw an exception when a problem arise
 
-    throw exception; // Throw an exception when a problem arise
-}
-catch (...) {
-    // Block of code to handle errors
+    }
+    catch (const char* errorMessage ) {
+        // Block of code to handle & report error during main routine/loop
+        std::cerr << errorMessage << std::endl;
+    }
+    /*catch (...) {
+        // Block of code to handle & report error during main routine/loop
+    }
+    catch (...) {
+        // Block of code to handle & report error during main routine/loop
+    }
+    catch (...) {
+        // Block of code to handle & report error during main routine/loop
+    }
+    catch (...) {
+        // Block of code to handle & report error during main routine/loop
+    }*/
+    // D. liberar recursos empleados por el entorno Bi3 con el cierre de la sesión
+    return 0;
 }

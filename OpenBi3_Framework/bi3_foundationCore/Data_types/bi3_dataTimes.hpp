@@ -53,21 +53,21 @@
 //  _____ BASIC TIME DATA TYPES. _________________________________________________
 //  ______________________________________________________________________________
 struct bi3TimeD {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TimeM {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TimeY {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TimeF {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TDuration {
-    <#struct fields#>
+    //<#struct fields#>
 };

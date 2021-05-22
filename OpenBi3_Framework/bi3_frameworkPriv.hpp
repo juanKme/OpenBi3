@@ -1,9 +1,9 @@
 /*
  ===============================================================================
- ·File:       bi3_dataLogics.hpp
+ ·File:       bi3_frameworkPriv.hpp
  ·Project:    OpenBi3 framework technology
  
- ·Author:     Juan Torres on 15/03/21
+ ·Author:     Juan Torres on 22/05/21
  ·Group:      CTDi Pro. Copyright© 2021
  
  Any use, distribution or reproduction of this material (in part or as a whole),
@@ -32,30 +32,14 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataLogics_hpp
-#define bi3_dataLogics_hpp
 
-#pragma once
+/* The classes below are not exported */
+#pragma GCC visibility push(hidden)
 
-// Internal references
-
-
-// External references and libraries
-#include <stdio.h>
-
-#endif /* bi3_dataLogics_hpp */
-
-
-//  ==============================================================================
-//      DATA TYPE DEFINITIONS FOR LOGIC DATA MANIPULATION
-//  ==============================================================================
-
-//  _____ BASIC BOOLEAN DATA TYPES. ______________________________________________
-//  ______________________________________________________________________________
-struct bi3Bin {
-    //<#struct fields#>
+class bi3_FrameworkPriv
+{
+    public:
+    void HelloWorldPriv(const char *);
 };
 
-struct bi3Ter {
-    //<#struct fields#>
-};
+#pragma GCC visibility pop

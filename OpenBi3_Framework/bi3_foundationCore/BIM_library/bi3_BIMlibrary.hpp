@@ -171,7 +171,7 @@ public:
 
 //  _____ C2.2 — SPECIALIZED BIM DATA TYPE FOR X-COMPONENT OBJECTS. ______________
 //  ______________________________________________________________________________
-class bimRoadwayPrj : public bimData {
+class bimYMbr : public bimData {
 private:
     // Object properties
     

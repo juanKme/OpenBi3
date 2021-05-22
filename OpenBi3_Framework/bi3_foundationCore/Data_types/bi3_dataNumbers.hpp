@@ -53,103 +53,103 @@
 //  _____ NATURAL NUMBERS ( 0 ≥ VAR ≥ +N) ________________________________________
 //  ______________________________________________________________________________
 struct bi3N8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3N32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3N64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ INTEGER NUMBERS ( -Z ≥ VAR ≥ +Z ) ______________________________________
 //  ______________________________________________________________________________
 struct bi3Z8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3Z32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3Z64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ RATIONAL NUMBERS ( -Q ≥ VAR ≥ +Q ) _____________________________________
 //  ______________________________________________________________________________
 struct bi3Q8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3Q32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3Q64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ IRRATIONAL NUMBERS ( -I ≥ VAR ≥ +I ) ___________________________________
 //  ______________________________________________________________________________
 struct bi3I8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3I32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3I64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ DIRECT NUMBERS ( -R ≥ VAR ≥ +R ) also known as Real numbers ____________
 //  ______________________________________________________________________________
 struct bi3R8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3R32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3R64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ LATERAL NUMBERS ( -L ≥ VAR ≥ +L ) also known as Imaginary numbers ______
 //  ______________________________________________________________________________
 struct bi3L8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3L32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3L64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ COMPLEX NUMBERS ( -C ≥ VAR ≥ +C ) ______________________________________
 //  ______________________________________________________________________________
 struct bi3C8 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3C32 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3C64 {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 //  _____ TERNARY-base27 ENCODED NATURAL NUMBER ( 0 ≥ VAR ≥ +4·(27^5) ) __________
 //  ______________________________________________________________________________
 struct bi3TEN {
-    <#struct fields#>
+    //<#struct fields#>;
 };

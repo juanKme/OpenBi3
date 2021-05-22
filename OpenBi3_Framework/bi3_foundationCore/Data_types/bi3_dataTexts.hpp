@@ -53,25 +53,25 @@
 //  _____ BASIC TEXT DATA TYPES. _________________________________________________
 //  ______________________________________________________________________________
 struct bi3TextXS {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TextS {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TextM {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TextL {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TextXL {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 struct bi3TextUL {
-    <#struct fields#>
+    //<#struct fields#>
 };

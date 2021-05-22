@@ -42,7 +42,7 @@
 
 // External references and libraries
 #include <stdio.h>
-#include <bi3_dataNumbers.hpp>
+#include "bi3_dataNumbers.hpp"
 
 #endif /* bi3_dataMaths_hpp */
 
@@ -54,13 +54,13 @@
 //  _____ BASIC MATH COMPONENTS. _________________________________________________
 //  ______________________________________________________________________________
 struct bi3MathTerm {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3MathExpr {
-    <#struct fields#>
+    //<#struct fields#>;
 };
 
 struct bi3MathFunc {
-    <#struct fields#>
+    //<#struct fields#>;
 };

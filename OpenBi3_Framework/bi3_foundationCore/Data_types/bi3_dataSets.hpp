@@ -42,7 +42,7 @@
 
 // External references and libraries
 #include <stdio.h>
-#include <array.h>
+
 
 #endif /* bi3_dataSets_hpp */
 
@@ -56,25 +56,25 @@
 
 //  Fundamental data-type for collections of data and BIM objects.
 struct bi3DataSet {
-    std::array<bi3TEN,1> dataIDTree;
+    //std::array<bi3TEN,1> dataIDTree;
 };
 
 //  A static collection of objects with a specific and unmutable order.
 struct bi3Array : public bi3DataSet {
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 //  A dynamic collection of objects with a specific and unmutable order.
 struct bi3List : public bi3DataSet{
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 //  A dynamic collection of objects with no particular order.
 struct bi3Bag : public bi3DataSet{
-    <#struct fields#>
+    //<#struct fields#>
 };
 
 //  A dynamic collection of objects with no particular order and no duplication allowed.
 struct bi3Set : public bi3DataSet{
-    <#struct fields#>
+    //<#struct fields#>
 };

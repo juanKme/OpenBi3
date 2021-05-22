@@ -1,9 +1,9 @@
 /*
  ===============================================================================
- ·File:       bi3_dataLogics.hpp
+ ·File:       bi3_framework.cpp
  ·Project:    OpenBi3 framework technology
  
- ·Author:     Juan Torres on 15/03/21
+ ·Author:     Juan Torres on 22/05/21
  ·Group:      CTDi Pro. Copyright© 2021
  
  Any use, distribution or reproduction of this material (in part or as a whole),
@@ -32,30 +32,20 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataLogics_hpp
-#define bi3_dataLogics_hpp
 
-#pragma once
+#include <iostream>
+#include "bi3_framework.hpp"
+#include "bi3_frameworkPriv.hpp"
 
-// Internal references
-
-
-// External references and libraries
-#include <stdio.h>
-
-#endif /* bi3_dataLogics_hpp */
-
-
-//  ==============================================================================
-//      DATA TYPE DEFINITIONS FOR LOGIC DATA MANIPULATION
-//  ==============================================================================
-
-//  _____ BASIC BOOLEAN DATA TYPES. ______________________________________________
-//  ______________________________________________________________________________
-struct bi3Bin {
-    //<#struct fields#>
+void bi3_Framework::HelloWorld(const char * s)
+{
+    bi3_FrameworkPriv *theObj = new Bi3_FrameworkPriv;
+    theObj->HelloWorldPriv(s);
+    delete theObj;
 };
 
-struct bi3Ter {
-    //<#struct fields#>
+void bi3_FrameworkPriv::HelloWorldPriv(const char * s) 
+{
+    std::cout << s << std::endl;
 };
+

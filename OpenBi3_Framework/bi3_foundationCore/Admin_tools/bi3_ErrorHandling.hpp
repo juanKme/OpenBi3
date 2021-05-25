@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataTypes.hpp
+ ·File:       bi3_ErrorHandling.hpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,22 +32,34 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataTypes_hpp
-#define bi3_dataTypes_hpp
-
+#ifndef bi3_ErrorHandling_hpp
+#define bi3_ErrorHandling_hpp
 #pragma once
 
-// Internal references
+// External references and libraries
 #include <stdio.h>
 
-// External references and libraries
-#include "bi3_dataNumbers.hpp"
-#include "bi3_dataMaths.hpp"
-#include "bi3_dataLogics.hpp"
-#include "bi3_dataTexts.hpp"
-#include "bi3_dataTimes.hpp"
-#include "bi3_dataSets.hpp"
+// Internal references
+#include "../Data_types/bi3_dataNumbers.hpp"
+#include "../Data_types/bi3_dataTexts.hpp"
 
 
-#endif /* bi3_dataTypes_hpp */
+//  ==============================================================================
+//      ERROR OBJECT TYPE DEFINITIONS
+//  ==============================================================================
 
+//  _____ C0 — CORE DATA TYPE FOR CROSS-FRAMEWORK BIM CLASSES. ___________________
+//  ______________________________________________________________________________
+class bi3_ErrorObj : public std::exception {
+public:
+    // Object public properties
+    Bi3::bi3N8           errorCode;
+    Bi3::bi3TextXL       errorDescription;
+    
+    // Object public functions
+    const char * what () const throw () {
+        return "Custom Exception";
+    }
+};
+
+#endif /* bi3_ErrorHandling_hpp */

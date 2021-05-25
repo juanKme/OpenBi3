@@ -56,111 +56,150 @@
 //#include <stddef.h>
 #include <stdexcept>
 //#include <stdint.h>
-//#include <stdio.h>
-//#include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 //#include <stdnoreturn.h>
 #include <string>
 //#include <tgmath.h>
 //#include <thread>
-//#include <time.h>
+#include <time.h>
 //#include <uchar.h>
 //#include <wchar.h>
 //#include <wctype.h>
 
 // Internal references
 #include "bi3_framework.hpp"
-
+#include "bi3_foundationCore/Admin_tools/bi3_ErrorHandling.hpp"
 template<typename inputType>
-void log(inputType message)
-{
-    std::cout << message << std::endl;
-}
-template<typename inputType>
-void list(inputType message)
-{
-    std::cout << message << " - ";
+void logtoConsole(inputType message, bool endLine) {
+    std::cout << message;
+    if (endLine == true) {std::cout << std::endl;}
 }
 
+template<typename inputType>
+void logtoFile(inputType message,
+               inputType logTime,
+               inputType *logFilePointer) {
+    std::string fullLog = " · Booklog record : "+logTime+" — "+message+"\n";
+    fprintf(logFilePointer = fopen("Framework_Booklog.txt", "a+"), "%s", fullLog);
+    fclose(logFilePointer);
+}
 
-int main(int argc, const char * argv[])
-{
-    // A. iniciar sesión de trabajo preparando el entorno Bi3
+int main(int argc, const char * argv[]) {
+    // Setting up the working environment for the framework interac
+    bool terminationFlag = false;
+    time_t logTime;
+    FILE *logFilePointer;
+    char sentence[1000]; // not really necessary
     
-    unsigned int cycle = 1;
-    char control = '0';
-
-    const std::string salute = "Mensaje de bienvenida";
-    // Main BIM-data manipulation proccess routine
-    try {
+    struct tm y2k = {0};
+    double seconds;
+    y2k.tm_hour = 0;   y2k.tm_min = 0; y2k.tm_sec = 0;
+    y2k.tm_year = 100; y2k.tm_mon = 0; y2k.tm_mday = 1;
+    time(&logTime);  // get current time; same as: timer = time(NULL)
+    
+    if ((logFilePointer = fopen("Framework_Booklog.txt", "a+")) == NULL) {
+        logtoConsole("Booklog file cannot be opened. The program will now create a new file.", true);
+        logFilePointer = fopen("Framework_Log.txt", "a");
+    }
+    
+    //logtoFile("Testing", logTime, *logFilePointer);
+    fclose(logFilePointer);
+    
+    do {
+        // A. iniciar sesión de trabajo preparando el entorno Bi3
+        unsigned int cycle = 1;
+        char control = '0';
+        const std::string salute = " — Mensaje de bienvenida | Entorno de trabajo preparado — ";
         
-        
-        
-        do {
-            // B. hacer continuamente un switch hasta que el usuario elija salir (X)
-            /*switch (<#expression#>) {
-                case <#constant#>:
-                    // 1. crear un nuevo modelo desde objeto vacio tipo "BIM_model"
-                    <#statements#>
-                    break;
-                
-                case <#constant#>:
-                    // 2. cargar un modelo BIM desde contenido en archivo (si existe)
-                    <#statements#>
-                    break;
-                
-                case <#constant#>:
-                    // 3. intercambiar de modelo activo en la sesión de trabajo
-                    <#statements#>
-                    break;
-                    
-                case <#constant#>:
-                    // 4. editar el modelo BIM activo en la sesión de trabajo (múltiples submenus)
-                    <#statements#>
-                    break;
-                    
-                case <#constant#>:
-                    // 5. guardar en archivo el estado del modelo activo en la sesión de trabajo
-                    <#statements#>
-                    break;
-                    
-                case <#constant#>:
-                    // 6. terminar la sesión de trabajo
-                    <#statements#>
-                    break;
-                    
-                default:
-                    // — por defecto el programa permite ajustar la configuración del programa
-                    break;
-            }*/
+        // Main BIM-data manipulation proccess routine
+        try {
             
-            // C. correr las rutinas y funciones que presentan la información BIM procesada
-            //list("Process step #");log(cycle);
-            log("\n··· Objects created ···························\n");
-            //list(object1);
-            log("");
-            
-            control = std::cin.get();log("");
-            cycle += 1;
-        } while ((control != 'e'));
-        //throw exception; // Throw an exception when a problem arise
+            do {
+                // B. hacer continuamente un switch hasta que el usuario elija salir (X)
+                logtoConsole(salute, true);
 
-    }
-    catch (const char* errorMessage ) {
-        // Block of code to handle & report error during main routine/loop
-        std::cerr << errorMessage << std::endl;
-    }
-    /*catch (...) {
-        // Block of code to handle & report error during main routine/loop
-    }
-    catch (...) {
-        // Block of code to handle & report error during main routine/loop
-    }
-    catch (...) {
-        // Block of code to handle & report error during main routine/loop
-    }
-    catch (...) {
-        // Block of code to handle & report error during main routine/loop
-    }*/
+                switch (control) {
+                    case '1':
+                        // 1. crear un nuevo modelo desde objeto vacio tipo "BIM_model"
+                        //<#statements#>
+                        break;
+                 
+                    case '2':
+                        // 2. cargar un modelo BIM desde contenido en archivo (si existe)
+                        //<#statements#>
+                        break;
+                 
+                    case '3':
+                        // 3. intercambiar de modelo activo en la sesión de trabajo
+                        //<#statements#>
+                        break;
+                 
+                    case '4':
+                        // 4. editar el modelo BIM activo en la sesión de trabajo (múltiples submenus)
+                        //<#statements#>
+                        break;
+                 
+                    case '5':
+                        // 5. guardar en archivo el estado del modelo activo en la sesión de trabajo
+                        //<#statements#>
+                        break;
+                 
+                    case '6':
+                        // 6. terminar la sesión de trabajo
+                        //<#statements#>
+                        break;
+                 
+                    default:
+                        // — por defecto el programa permite ajustar la configuración del programa
+                        char oper;
+                        float num1, num2;
+                        std::cout << "Enter an operator (+, -, *, /): ";
+                        std::cin >> oper;
+                        std::cout << "Enter two numbers: " << std::endl;
+                        std::cin >> num1 >> num2;
+                        break;
+                }
+                
+                // C. correr las rutinas y funciones que presentan la información BIM procesada
+                //logtoFile("Process step #");logtoConsole(cycle);
+                //logtoFile(object1);
+                // Program exits if the file pointer returns NULL.
+                //exit(1);
+                
+                logtoConsole(" + ", true);control = std::cin.get();logtoConsole("/cl", true);
+                cycle += 1;
+            } while ((control != 'e'));
+            // if error message throw "exception"; // Throw an exception when a problem arise
+            // if error code throw 12345;
+            // if error object throw errorObj;
+
+        }
+        catch (const bi3_ErrorObj errorObject) {
+            // Block of code to handle & report errors during main routine/loop
+            std::cerr << "Exception #" << "errorObject.errorCode" << " : " << std::endl;
+            std::cerr << "errorObject.errorDescription" << std::endl;
+        }
+        catch (std::exception stdException){
+            // Block of code to handle & report errors during main routine/loop
+            std::cerr << "Exception:" << stdException.what() << std::endl;
+        }
+        catch (const int errorCode) {
+            // Block of code to handle & report errors during main routine/loop
+            std::cerr << "Exception #" << errorCode << std::endl;
+        }
+        catch (const char* errorMessage) {
+            // Block of code to handle & report errors during main routine/loop
+            std::cerr << "Exception: " << errorMessage << std::endl;
+        }
+    } while (terminationFlag == false);
+    
+    
     // D. liberar recursos empleados por el entorno Bi3 con el cierre de la sesión
     return 0;
+    /* / exiting program
+    if (logFilePointer == NULL) {
+        printf("Error!");
+        exit(1);
+    }*/
 }

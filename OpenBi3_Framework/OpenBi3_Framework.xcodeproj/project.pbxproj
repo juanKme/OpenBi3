@@ -11,6 +11,8 @@
 		22250330265933BF00E24800 /* bi3_framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2225032F265933BF00E24800 /* bi3_framework.cpp */; };
 		2225033F2659364200E24800 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22358DC92605AE2200507A8E /* main.cpp */; };
 		222503402659364800E24800 /* bi3_framework.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22358DCA2605AF4000507A8E /* bi3_framework.hpp */; };
+		222503452659910100E24800 /* bi3_ErrorHandling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222503432659910100E24800 /* bi3_ErrorHandling.cpp */; };
+		222503462659910100E24800 /* bi3_ErrorHandling.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 222503442659910100E24800 /* bi3_ErrorHandling.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		2225032D265933BF00E24800 /* bi3_frameworkPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_frameworkPriv.hpp; sourceTree = "<group>"; };
 		2225032F265933BF00E24800 /* bi3_framework.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_framework.cpp; sourceTree = "<group>"; };
 		222503382659340800E24800 /* Bi3_demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bi3_demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		222503432659910100E24800 /* bi3_ErrorHandling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_ErrorHandling.cpp; sourceTree = "<group>"; };
+		222503442659910100E24800 /* bi3_ErrorHandling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_ErrorHandling.hpp; sourceTree = "<group>"; };
 		2226E69926526F0500F81E32 /* bi3_adminTools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_adminTools.cpp; sourceTree = "<group>"; };
 		2226E69A26526F0500F81E32 /* bi3_adminTools.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_adminTools.hpp; sourceTree = "<group>"; };
 		22358DC726058A5400507A8E /* BIM_objects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BIM_objects.cpp; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				22358DCB2605B26C00507A8E /* bi3_foundationCore.cpp */,
 				2226E69926526F0500F81E32 /* bi3_adminTools.cpp */,
+				222503432659910100E24800 /* bi3_ErrorHandling.cpp */,
+				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
 				228D8CAD264C8328008EC6CD /* bi3_dataNumbers.cpp */,
 				228D8CB3264C8EFC008EC6CD /* bi3_dataMaths.cpp */,
 				228D8CB5264CD6D9008EC6CD /* bi3_dataLogics.cpp */,
@@ -182,7 +188,6 @@
 				228D8CB1264C86FB008EC6CD /* bi3_dataTimes.cpp */,
 				22358DCE2605BD7300507A8E /* bi3_dataSets.cpp */,
 				22358DC726058A5400507A8E /* BIM_objects.cpp */,
-				22358DD02605DAFF00507A8E /* bi3_dataTypes.cpp */,
 				2289228C2605773F00E9DCA3 /* bi3_BIMlibrary.cpp */,
 			);
 			path = src_FC;
@@ -224,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				2226E69A26526F0500F81E32 /* bi3_adminTools.hpp */,
+				222503442659910100E24800 /* bi3_ErrorHandling.hpp */,
 			);
 			path = Admin_tools;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222503402659364800E24800 /* bi3_framework.hpp in Headers */,
+				222503462659910100E24800 /* bi3_ErrorHandling.hpp in Headers */,
 				2225032E265933BF00E24800 /* bi3_frameworkPriv.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222503452659910100E24800 /* bi3_ErrorHandling.cpp in Sources */,
 				22250330265933BF00E24800 /* bi3_framework.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +350,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -408,6 +417,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -512,10 +522,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;
@@ -570,9 +582,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;

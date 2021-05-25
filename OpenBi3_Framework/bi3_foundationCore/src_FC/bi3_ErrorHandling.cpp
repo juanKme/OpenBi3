@@ -1,6 +1,6 @@
 /*
  ===============================================================================
- ·File:       bi3_dataTypes.hpp
+ ·File:       bi3_ErrorHandling.cpp
  ·Project:    OpenBi3 framework technology
  
  ·Author:     Juan Torres on 15/03/21
@@ -32,22 +32,4 @@
  ===============================================================================
  */
 
-#ifndef bi3_dataTypes_hpp
-#define bi3_dataTypes_hpp
-
-#pragma once
-
-// Internal references
-#include <stdio.h>
-
-// External references and libraries
-#include "bi3_dataNumbers.hpp"
-#include "bi3_dataMaths.hpp"
-#include "bi3_dataLogics.hpp"
-#include "bi3_dataTexts.hpp"
-#include "bi3_dataTimes.hpp"
-#include "bi3_dataSets.hpp"
-
-
-#endif /* bi3_dataTypes_hpp */
-
+#include "bi3_ErrorHandling.hpp"

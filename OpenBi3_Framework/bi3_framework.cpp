@@ -32,6 +32,15 @@
  ===============================================================================
  */
 
+/*
+ For GCC/G++ users
+ 
+ Using g++, you can use the -I option to specify an alternate include directory.
+ 
+ 1
+ g++ -o main -I/source/includes main.cpp
+ */
+
 
 #include <iostream>
 #include "bi3_framework.hpp"

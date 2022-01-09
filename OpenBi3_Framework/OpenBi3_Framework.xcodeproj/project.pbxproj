@@ -66,6 +66,7 @@
 		228D8CB4264C8EFC008EC6CD /* bi3_dataMaths.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataMaths.hpp; sourceTree = "<group>"; };
 		228D8CB5264CD6D9008EC6CD /* bi3_dataLogics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bi3_dataLogics.cpp; sourceTree = "<group>"; };
 		228D8CB6264CD6D9008EC6CD /* bi3_dataLogics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bi3_dataLogics.hpp; sourceTree = "<group>"; };
+		2297C647278A6B720081D666 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				22358DC92605AE2200507A8E /* main.cpp */,
+				2297C647278A6B720081D666 /* module.modulemap */,
 				2225032F265933BF00E24800 /* bi3_framework.cpp */,
 				2225032D265933BF00E24800 /* bi3_frameworkPriv.hpp */,
 				22358DCA2605AF4000507A8E /* bi3_framework.hpp */,

@@ -33,7 +33,7 @@
  */
 
 module OpenBi3 [system][extern_c] {
-    header “unzip.h”
-    header “zip.h”
+    header “C_lib1.h”
+    header “C_lib2.h”
     export *
 }
